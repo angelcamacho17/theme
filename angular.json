@@ -28,8 +28,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              { 
+                "input": "src/assets/scss/_global.scss",
+                "inject": false,
+                "bundleName": "remote-style"
+              }
             ],
+            "extractCss": true,
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/assets/scss"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
